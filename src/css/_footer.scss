@@ -1,0 +1,33 @@
+footer {
+    background-color: $primary-color;
+    height:40px;
+    position: fixed;
+    width:100%;
+    bottom:0;
+    z-index: 2;
+
+    a {
+        color:#FFFFFF;
+        text-decoration: none;
+    }
+
+    ul {
+        float: right;
+        margin: 10px 10px;
+        color:#FFFFFF;
+
+        li {
+            padding: 10px;
+            display:inline;
+
+            // Icons
+            span {
+                font-size: 20px;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

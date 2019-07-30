@@ -1,0 +1,37 @@
+#bio-img {
+    z-index: 1;
+    width:50%;
+    max-width: 500px;
+    float: left;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    opacity: 1;
+}
+
+#skills-img {
+    z-index: 1;
+    width:50%;
+    max-width: 500px;
+    float: left;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+
+// Hide and Show the Skillz Image on Hover and start
+.bio-skillz {
+    #skills-img {
+        opacity:0;
+        transition: opacity 1s;
+    }
+    &:hover {
+        #skills-img { 
+            opacity:0.5;
+
+            @media only screen and (max-width: $mobile) {
+                & { display: none;}
+            }
+        }
+    }
+}
